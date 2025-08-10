@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias Em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou sisplemente aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/you know me - jeremy black.mp3" type="audio/mpeg"> <!-- Vai Tentar Carregar Primeiro o De Cima e Vai Em Ordem Para Baixo Caso Nao Consiga -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Tente Evitar Arquivos WAV -->
+        <p>infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/guanacast-33.mp3">Clique Aqui Para Baixar o Arquivo MP3.</a></p>
+    </audio>
+</body>
+</html>

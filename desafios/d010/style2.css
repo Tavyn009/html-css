@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fac';
+    src: url(fontes/idroid.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* CSS Document */
+body {
+    background-color: rgb(144, 238, 189);
+    margin: 0%;
+}
+
+header {
+    font-family: 'fac', Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(120, 255, 120), rgba(0, 0, 0, 0.541) 90%);
+    padding: 30px;
+}
+
+h1, h2 {
+    font-family: 'fac', Helvetica, sans-serif;
+    color: green;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    background-image: linear-gradient(to right, lightgreen, white);
+    padding: 0px 0px 0px 10px;
+}
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+}
+.navi {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-sizing: border-box;
+}
+
+.paragrafos {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1.2em;
+    padding: 0px 10px;
+}
+
+#irina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bugdroid {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.hiper{
+    color: green;
+    text-decoration: none;
+}
+
+.ult {
+    background-color: rgba(144, 238, 144, 0.802);
+    padding: 0px 0px 10px 0px;
+    border-radius: 15px;
+}
+
+.ultt {
+    color: white;
+    background-color: green;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: darkgreen;
+    padding: 0.1px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    color: white;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#video {
+    background-color: darkgreen;
+    padding: 5px 20px 5px 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 850px) {
+    main {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.1em;
+        padding-left: 5px;
+    }
+    .bugdroid {
+        width: 100%;
+        max-width: 200px;
+    }
+    #video iframe {
+        width: 100% !important;
+        height: 200px !important;
+    }
+}
+
+/* Responsividade extra para telas muito pequenas */
+@media (max-width: 500px) {
+    main {
+        padding: 2px;
+    }
+    h1 {
+        font-size: 1.1em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .ultt {
+        font-size: 1em;
+        padding: 10px;
+    }
+}

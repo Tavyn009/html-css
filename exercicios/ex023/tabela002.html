@@ -8,11 +8,24 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(85, 252, 85), green);
+        }
+
+        h1 {
+            margin: 10px auto 10px auto;
+            background-color: rgba(255, 255, 255, 0.726);
+            width: 400px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
         }
 
         table {
+            background-color: white;
             width: 500px;
+            margin: auto;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -24,9 +37,34 @@
             text-align: right;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
-            color: white;
+            background-color: #585858;
+            color: rgb(255, 255, 255);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1%;
+            background-color: #585858;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        p {
+            background-color: white;
+            padding: 10px;
+            text-indent: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
         }
 
     </style>
@@ -36,6 +74,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES 
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH
                 TBODY
@@ -44,10 +83,11 @@
                     TR, TD, TH
     -->
     <table>
+        <caption style="border-radius: 10px 10px 0px 0px;">Populacao Das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -162,10 +202,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total De Habitantes</th>
+                <th scope="row">Total De Habitantes</th>
                 <td class="num"><strong>212.583.750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis tenetur ullam maiores deserunt possimus. Inventore atque corporis modi facere eaque culpa numquam aliquam accusantium similique veniam ducimus, eum quisquam labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque ullam harum quaerat, optio corrupti amet. Ipsam, iste quibusdam nemo, animi in labore at alias, reiciendis dolor expedita molestiae tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et nihil voluptas cupiditate sunt quaerat rerum soluta amet quidem reprehenderit? Fugit vel debitis incidunt, unde sapiente et! Reprehenderit, laborum ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis asperiores quae suscipit! Deleniti sunt quae vero quasi porro voluptates earum deserunt incidunt, assumenda, veritatis recusandae facilis aperiam placeat et.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis tenetur ullam maiores deserunt possimus. Inventore atque corporis modi facere eaque culpa numquam aliquam accusantium similique veniam ducimus, eum quisquam labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque ullam harum quaerat, optio corrupti amet. Ipsam, iste quibusdam nemo, animi in labore at alias, reiciendis dolor expedita molestiae tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et nihil voluptas cupiditate sunt quaerat rerum soluta amet quidem reprehenderit? Fugit vel debitis incidunt, unde sapiente et! Reprehenderit, laborum ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis asperiores quae suscipit! Deleniti sunt quae vero quasi porro voluptates earum deserunt incidunt, assumenda, veritatis recusandae facilis aperiam placeat et.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis tenetur ullam maiores deserunt possimus. Inventore atque corporis modi facere eaque culpa numquam aliquam accusantium similique veniam ducimus, eum quisquam labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque ullam harum quaerat, optio corrupti amet. Ipsam, iste quibusdam nemo, animi in labore at alias, reiciendis dolor expedita molestiae tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et nihil voluptas cupiditate sunt quaerat rerum soluta amet quidem reprehenderit? Fugit vel debitis incidunt, unde sapiente et! Reprehenderit, laborum ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis asperiores quae suscipit! Deleniti sunt quae vero quasi porro voluptates earum deserunt incidunt, assumenda, veritatis recusandae facilis aperiam placeat et.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis tenetur ullam maiores deserunt possimus. Inventore atque corporis modi facere eaque culpa numquam aliquam accusantium similique veniam ducimus, eum quisquam labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque ullam harum quaerat, optio corrupti amet. Ipsam, iste quibusdam nemo, animi in labore at alias, reiciendis dolor expedita molestiae tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et nihil voluptas cupiditate sunt quaerat rerum soluta amet quidem reprehenderit? Fugit vel debitis incidunt, unde sapiente et! Reprehenderit, laborum ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis asperiores quae suscipit! Deleniti sunt quae vero quasi porro voluptates earum deserunt incidunt, assumenda, veritatis recusandae facilis aperiam placeat et.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis tenetur ullam maiores deserunt possimus. Inventore atque corporis modi facere eaque culpa numquam aliquam accusantium similique veniam ducimus, eum quisquam labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque ullam harum quaerat, optio corrupti amet. Ipsam, iste quibusdam nemo, animi in labore at alias, reiciendis dolor expedita molestiae tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et nihil voluptas cupiditate sunt quaerat rerum soluta amet quidem reprehenderit? Fugit vel debitis incidunt, unde sapiente et! Reprehenderit, laborum ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis asperiores quae suscipit! Deleniti sunt quae vero quasi porro voluptates earum deserunt incidunt, assumenda, veritatis recusandae facilis aperiam placeat et.</p>
+    
 </body>
 </html>

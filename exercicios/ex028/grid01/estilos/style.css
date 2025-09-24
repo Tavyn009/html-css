@@ -7,4 +7,17 @@
     max-width: 600px;
     margin: 20px auto;
     background-color: beige;
+    border: 3px solid green;
+}
+
+.item {
+    margin: 20px;
+    text-align: center;
+    border: 1px dashed black;
+    padding: 50px;
+}
+
+.exp {
+    grid-column: span 2;
+    grid-row: span 8;
 }

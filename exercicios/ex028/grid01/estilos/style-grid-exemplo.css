@@ -1,0 +1,18 @@
+/* Exemplo completo de Grid Layout - arquivo novo */
+.container-grid-exemplo {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "menu main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    gap: 10px;
+    margin-top: 40px;
+}
+.header { grid-area: header; background: #ccc; text-align: center; padding: 10px; }
+.menu   { grid-area: menu; background: #eee; text-align: center; padding: 10px; }
+.nav   { grid-area: nav; background: #ddd; text-align: center; padding: 10px; }
+.main   { grid-area: main; background: #fff; text-align: center; padding: 10px; }
+.footer { grid-area: footer; background: #ccc; text-align: center; padding: 10px; }

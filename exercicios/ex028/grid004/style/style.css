@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.caixa2 {
+    background-color: green;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.caixa3 {
+    background-color: blue;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
+}
+/*
+
+        FORMA SIMPLIFICADA
+.container {
+    display: grid;
+    grid-template:
+    " header header header header" 100px TAMANHO DA LINHA
+    " main main menu menu" 200px TAMANHO DA LINHA
+    / 1fr 1fr 1fr 1fr; LARGURA DAS COLUNAS
+    gap: 5px;
+}
+
+
+.caixa1 { grid-area: header;}
+.caixa2 { grid-area: main;}
+.caixa3 { grid-area: menu;}
+
+*/
